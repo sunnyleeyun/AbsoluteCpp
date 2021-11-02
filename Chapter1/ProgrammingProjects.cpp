@@ -174,3 +174,23 @@ int q11() {
     cout << h << " hours, " << m << " minutes, and " << t << " seconds. \n";
     return 0;
 }
+
+// #12
+int q12() {
+    int ft, in;
+    cout << "You will be asked to enter your height separately with Feet and Inches\n";
+    cout << "Feet: ";
+    cin >> ft;
+    cout << "Inches: ";
+    cin >> in;
+    double p = 0;
+    p += (ft < 5 ? 110 / 5 * ft : 110);
+    ft -= 5;
+    while (ft > 0) {
+        in += 12;
+        ft -= 1;
+    }
+    p += in * 5;
+    cout << "Your ideal body weight is " << p << endl;
+    return 0;
+}
