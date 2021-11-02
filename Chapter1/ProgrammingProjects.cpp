@@ -194,3 +194,14 @@ int q12() {
     cout << "Your ideal body weight is " << p << endl;
     return 0;
 }
+
+// #13
+int q13() {
+    const int lethalAmount = 10000;
+    int caf;
+    cout << "Enter the amount of caffeine in milligrams in a drink: ";
+    cin >> caf;
+
+    cout << "Drinking " << lethalAmount / caf + 1 << " cups of it will kill you.\n";
+    return 0;
+}
