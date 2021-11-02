@@ -161,3 +161,16 @@ int q10() {
     cout << "The distance is " << s * t << " meters. \n";
     return 0;
 }
+
+// #11
+int q11() {
+    int t;
+    cout << "Enter a time in seconds: ";
+    cin >> t;
+    int h = t / 3600;
+    t %= 3600;
+    int m = t / 60;
+    t %= 60;
+    cout << h << " hours, " << m << " minutes, and " << t << " seconds. \n";
+    return 0;
+}
