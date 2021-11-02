@@ -120,3 +120,20 @@ int q7() {
     cout << "Calories burned: " << r << endl;
     return 0;
 }
+
+// #8
+int q8() {
+    double n;
+    cout << "Enter a number: ";
+    cin >> n;
+    double guess = n / 2, r;
+    for (int i = 0; i < 5; i++) {
+        r = n / guess;
+        guess = (guess + r) / 2;
+    }
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(2);
+    cout << "The answer is " << r << endl;
+    return 0;
+}
