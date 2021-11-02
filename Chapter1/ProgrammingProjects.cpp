@@ -148,3 +148,16 @@ int q9() {
     cout << "You have " << c << " candy bars and " << g << " gumballs.\n";
     return 0;
 }
+
+// #10
+int q10() {
+    double s, t;
+    cout << "Enter the speed: "; // speed in miles / h
+    cin >> s;
+    cout << "Enter the time: "; // time in hours
+    cin >> t;
+    s = s / 3600 * 1609.344; // speed in m / s
+    t = t * 3600; // time in seconds
+    cout << "The distance is " << s * t << " meters. \n";
+    return 0;
+}
