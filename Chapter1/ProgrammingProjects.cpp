@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// #1
 int q1() {
     // 1 gallon = 3785.41 milliters
     double volMil;
@@ -11,6 +12,7 @@ int q1() {
     return 0;
 }
 
+// #2
 int q2() {
     const double rate = 0.001;   
     double sweetKillMouse, mouse, dieter;
@@ -25,5 +27,19 @@ int q2() {
     cout.setf(ios::showpoint);
     cout.precision(3);
     cout << "You may drink " << sweetKillMouse * dieter / mouse / rate << " sodas." << endl;
+    return 0;
+}
+
+// #3
+int q3() {
+    const double salesInc = 1.13;
+    const double profitInc = 1.27;
+    double prevSales, prevProfit;
+    cout << "Enter previous sales in millions: ";
+    cin >> prevSales;
+    cout << "Enter previous profit in millions: ";
+    cin >> prevProfit;
+    cout << "Increased sales amount is " << prevSales * salesInc << " millions.\n";
+    cout << "Increased profit amount is " << prevProfit * profitInc << " millions.\n";
     return 0;
 }
