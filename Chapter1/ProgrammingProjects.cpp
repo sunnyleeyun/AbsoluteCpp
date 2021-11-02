@@ -59,3 +59,22 @@ int q4() {
 
     return 0;
 }
+
+// #5
+int q5() {
+    double maxCap, boxNum, avgWeiBox;
+    cout << "Enter the truck's maximum capacity: ";
+    cin >> maxCap;
+    cout << "Enter the number of boxes the truck is carrying: ";
+    cin >> boxNum;
+    cout << "Enter the average weight of the boxes: ";
+    cin >> avgWeiBox;
+    if (boxNum * avgWeiBox <= maxCap) {
+        cout << "The truck can legally carry all boxes, and can add " << (maxCap - boxNum * avgWeiBox) / avgWeiBox << " more.\n";
+    }
+    else {
+        cout << "The truck is overloaded and should remove " << (boxNum * avgWeiBox - maxCap) / avgWeiBox << " boxes.\n";
+    }
+
+    return 0;
+}
