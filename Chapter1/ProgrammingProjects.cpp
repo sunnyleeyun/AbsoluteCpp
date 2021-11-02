@@ -201,7 +201,10 @@ int q13() {
     int caf;
     cout << "Enter the amount of caffeine in milligrams in a drink: ";
     cin >> caf;
-
-    cout << "Drinking " << lethalAmount / caf + 1 << " cups of it will kill you.\n";
+    int r = lethalAmount / caf;
+    if (lethalAmount % caf != 0) { 
+        r += 1; 
+    }
+    cout << "Drinking " << r << " cups of it will kill you.\n";
     return 0;
 }
