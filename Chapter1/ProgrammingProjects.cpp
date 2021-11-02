@@ -98,3 +98,25 @@ int q6() {
     cout << "The fare is " << r << endl;
     return 0;
 }
+
+// #7
+int q7() {
+    double weight;
+    cout << "Enter the weight: ";
+    cin >> weight;
+    double total = 15;
+    double r = 0, s = 4;
+    // first 3 min
+    r += s * 3;
+    total -= 3;
+    // the rest of the minutes
+    while (total > 0) {
+        s += 2;
+        r += s * (total - 4 < 0 ? total : 4);
+        total -= 4;
+    }
+
+    r = 0.0175 * r * 10 / 6 * weight;
+    cout << "Calories burned: " << r << endl;
+    return 0;
+}
