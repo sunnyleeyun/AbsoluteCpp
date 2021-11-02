@@ -78,3 +78,23 @@ int q5() {
 
     return 0;
 }
+
+// #6
+int q6() {
+    double d, t;
+    cout << "Enter distance: ";
+    cin >> d;
+    cout << "Enter time: ";
+    cin >> t;
+    double r = 2 + 0.2 * t;
+    d -= 2;
+    if (d > 0) {
+        if (d - 6 > 0) {
+            r += 1 * (d - 6) + 0.5 * 6;
+        } else {
+            r += 0.5 * d;
+        }
+    }
+    cout << "The fare is " << r << endl;
+    return 0;
+}
