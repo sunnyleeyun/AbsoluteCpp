@@ -43,3 +43,19 @@ int q3() {
     cout << "Increased profit amount is " << prevProfit * profitInc << " millions.\n";
     return 0;
 }
+
+// #4
+int q4() {
+    double customerNeed, interestRate, duration, faceValue;
+    cout << "Enter the amount customer need: ";
+    cin >> customerNeed;
+    cout << "Enter the interest rate: ";
+    cin >> interestRate;
+    cout << "Enter the duration in month: ";
+    cin >> duration;
+    faceValue = customerNeed / (1 - interestRate / 100 * duration / 12);
+    cout << "Face value is " << faceValue << endl;
+    cout << "Monthly payment is " << faceValue / duration << endl;
+
+    return 0;
+}
