@@ -137,3 +137,14 @@ int q8() {
     cout << "The answer is " << r << endl;
     return 0;
 }
+
+// #9
+int q9() {
+    int coupon;
+    cout << "Enter the number of coupon: ";
+    cin >> coupon;
+    int c = coupon / 10;
+    int g = coupon % 10 / 3;
+    cout << "You have " << c << " candy bars and " << g << " gumballs.\n";
+    return 0;
+}
