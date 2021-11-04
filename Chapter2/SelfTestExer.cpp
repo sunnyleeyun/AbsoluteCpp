@@ -127,21 +127,35 @@ int q11() {
     return 0;
 }
 
-// #q12
+// #12
 int q12() {
     // large
     return 0;
 }
 
-// #q13
+// #13
 int q13() {
     // small
     return 0;
 }
 
-
-// #q14
+// #14
 int q14() {
     // medium
+    return 0;
+}
+
+// #15
+int q15() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    if (n < 0) {
+        cout << "n is less than 0\n";
+    } else if (n <= 100) {
+        cout << "n is greater than or equal to 0 but less than or equal to 100\n";
+    } else {
+        cout << "n is greater than 100\n";
+    }
     return 0;
 }
