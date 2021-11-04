@@ -225,3 +225,11 @@ int q25() {
     // -42
     return 0;
 }
+
+// #26
+int q26() {
+    // The main important difference between a while statement and a do-while statement
+    // is that a do-while statement's loop body runs at least once 
+    // and a while statement might not execute at all.
+    return 0;
+}
