@@ -293,3 +293,18 @@ int q32() {
     // There's a semicolon at the for loop line
     return 0;
 }
+
+// #33
+int q33() {
+    // It's an infinite loop
+    return 0;
+}
+
+// #34
+int q34() {
+    // a. for loop
+    // b. while
+    // c. while
+    // d. do-while: at least one test will be performed
+    return 0;
+}
