@@ -233,3 +233,9 @@ int q26() {
     // and a while statement might not execute at all.
     return 0;
 }
+
+// #27
+int q27() {
+    // 2 4 6 8 
+    return 0;
+}
