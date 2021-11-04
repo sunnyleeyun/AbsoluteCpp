@@ -48,3 +48,9 @@ int q4() {
     }
     return 0;
 }
+
+// #5
+int q5() {
+    // no
+    return 0;
+}
