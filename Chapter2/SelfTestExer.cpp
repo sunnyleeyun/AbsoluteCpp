@@ -204,3 +204,9 @@ int q22() {
     // 1
     return 0;
 }
+
+// #23
+int q23() {
+    // no output
+    return 0;
+}
