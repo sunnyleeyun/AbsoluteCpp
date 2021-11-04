@@ -317,3 +317,11 @@ int q35() {
     // ... infinite loop
     return 0;
 }
+
+// #36
+int q36() {
+    // Break statements exit a loop(while, do-while, for) or terminate a switch
+    // Break statements are not legal anywhere else.
+    // Note that if loop are nested, break only exit one level of the loop
+    return 0;
+}
