@@ -286,3 +286,10 @@ int q31() {
     // 1024 is 2^10
     return 0;
 }
+
+// #32
+int q32() {
+    // 1024 1
+    // There's a semicolon at the for loop line
+    return 0;
+}
