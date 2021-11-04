@@ -38,3 +38,13 @@ int q3() {
     }
     return 0;
 }
+
+// #4
+int q4() {
+    // x^2 - 4x + 3 < 0, x - 3, x - 1
+    int x;
+    if (x > 1 && x < 3) {
+        cout << "x^2 - 4x + 3 < 0 \n";
+    }
+    return 0;
+}
