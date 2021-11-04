@@ -84,3 +84,15 @@ int q7() {
     }
     return 0;
 }
+
+// #8
+int q8() {
+    int exam, programsDone;
+    cout << "Enter your exam score: ";
+    cin >> exam;
+    cout << "Enter your done programs: ";
+    cin >> programsDone;
+    if (exam >= 60 && programsDone >= 10) cout << "Passed\n";
+    else cout << "Failed\n";
+    return 0;
+}
