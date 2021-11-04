@@ -28,3 +28,13 @@ int q2() {
     // 2. Should be (2 < x && x < 3)
     return 0;
 }
+
+// #3
+int q3() {
+    // x^2 - x - 2 > 0, x - 2, x + 1
+    int x;
+    if (x > 2 || x < -1) {
+        cout << "x^2 - x - 2 > 0 \n";
+    }
+    return 0;
+}
