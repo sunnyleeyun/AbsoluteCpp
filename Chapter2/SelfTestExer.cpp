@@ -108,3 +108,11 @@ int q9() {
     else cout << "OK\n";
     return 0;
 }
+
+// #10
+int q10() {
+    // a. 0 is false
+    // b. 1 is true
+    // c. -1 is true
+    return 0;
+}
