@@ -1,4 +1,6 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
 
 // #1
@@ -364,5 +366,23 @@ int q38() {
         moreToRead = inputStream >> text;
     }
     */
+    return 0;
+}
+
+// #39
+int q39() {
+    int total;
+    string name, score;
+    fstream inputStream;
+
+    inputStream.open("scores.txt");
+    inputStream >> total;
+    while (total)
+    {
+        inputStream >> name >> score;
+        cout << name << ", " << score << endl;
+        total -= 1;
+    }
+    inputStream.close();
     return 0;
 }
