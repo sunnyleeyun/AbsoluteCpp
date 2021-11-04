@@ -239,3 +239,13 @@ int q27() {
     // 2 4 6 8 
     return 0;
 }
+
+// #28
+int q28() {
+    // Hello 10
+    // Hello 8
+    // Hello 6
+    // Hello 4
+    // Hello 2
+    return 0;
+}
