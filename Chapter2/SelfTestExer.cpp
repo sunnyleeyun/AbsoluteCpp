@@ -255,3 +255,27 @@ int q29() {
     // 2.000000 1.500000 1.000000 0.500000 
     return 0;
 }
+
+// #30
+int q30() {
+    int i;
+    // a
+    for (i = 1; i <= 10; i++) {
+        if (i < 5 && i != 2) {
+            cout << 'X';
+        }
+    }
+
+    // b
+    for (i = 1; i <= 10; i+=3) {
+        cout << 'X';
+    }
+
+    // c*
+    long n;
+    cout << 'X'; // essential
+    for (n = 100; n < 1000; n+=100) {
+        cout << 'X';
+    }
+    return 0;
+}
