@@ -138,3 +138,10 @@ int q13() {
     // small
     return 0;
 }
+
+
+// #q14
+int q14() {
+    // medium
+    return 0;
+}
