@@ -126,3 +126,9 @@ int q11() {
     // End again
     return 0;
 }
+
+// #q12
+int q12() {
+    
+    return 0;
+}
