@@ -339,3 +339,30 @@ int q37() {
     // ...
     return 0;
 }
+
+// #38
+int q38() {
+    // origin
+    /*
+    bool moreToRead = true;
+    while (moreToRead)
+    {
+        string text;
+        moreToRead = inputStream >> text;
+        cout << text << endl
+    }
+    */
+    // Above will lead to an extra line.
+
+    // Adjust
+    /*
+    string text;
+    bool moreToRead = inputStream >> text;
+    while (moreToRead)
+    {
+        cout << text << endl;
+        moreToRead = inputStream >> text;
+    }
+    */
+    return 0;
+}
