@@ -54,3 +54,16 @@ int q5() {
     // no
     return 0;
 }
+
+// #6
+int q6() {
+    int score;
+    cout << "Input your score: ";
+    cin >> score;
+    if (score > 100) {
+        cout << "High\n";
+    } else {
+        cout << "Low\n";
+    }
+    return 0;
+}
