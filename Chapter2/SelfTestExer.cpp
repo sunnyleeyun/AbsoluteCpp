@@ -308,3 +308,12 @@ int q34() {
     // d. do-while: at least one test will be performed
     return 0;
 }
+
+// #35
+int q35() {
+    // 10
+    // 13
+    // 16
+    // ... infinite loop
+    return 0;
+}
