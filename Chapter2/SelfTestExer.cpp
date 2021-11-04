@@ -96,3 +96,15 @@ int q8() {
     else cout << "Failed\n";
     return 0;
 }
+
+// #9
+int q9() {
+    int temperature, pressure;
+    cout << "Enter temperature: ";
+    cin >> temperature;
+    cout << "Enter pressure: ";
+    cin >> pressure;
+    if (temperature >= 100 || pressure >= 200) cout << "Warning\n";
+    else cout << "OK\n";
+    return 0;
+}
