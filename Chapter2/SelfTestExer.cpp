@@ -325,3 +325,17 @@ int q36() {
     // Note that if loop are nested, break only exit one level of the loop
     return 0;
 }
+
+// #37
+int q37() {
+    // 1 times 10 = 10
+    // 1 times 9 = 9
+    // ...
+    // 2 times 10 = 20
+    // 2 time 9 = 19
+    // ...
+    // 10 times 10 = 100
+    // 10 times 9 = 90
+    // ...
+    return 0;
+}
