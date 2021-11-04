@@ -67,3 +67,20 @@ int q6() {
     }
     return 0;
 }
+
+// #7
+int q7() {
+    double savings, expenses;
+    cout << "Enter savings: ";
+    cin >> savings;
+    cout << "Enter expenses: ";
+    cin >> expenses;
+    if (savings < expenses) {
+        cout << "Bankrupt\n";
+    } else {
+        cout << "Solvent\n";
+        savings -= expenses;
+        expenses = 0;
+    }
+    return 0;
+}
