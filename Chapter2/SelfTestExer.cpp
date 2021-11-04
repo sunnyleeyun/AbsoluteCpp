@@ -386,3 +386,25 @@ int q39() {
     inputStream.close();
     return 0;
 }
+
+// #40
+int q40() {
+    int total, score, highestScore = 0;
+    string name, highestName = "";
+    fstream inputStream;
+
+    inputStream.open("scores.txt");
+    inputStream >> total;
+    while (total)
+    {
+        inputStream >> name >> score;
+        if (score > highestScore) {
+            highestScore = score;
+            highestName = name;
+        }
+        total -= 1;
+    }
+    cout << highestName << ", " << highestScore << endl;
+    inputStream.close();
+    return 0;
+}
