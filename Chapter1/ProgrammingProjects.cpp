@@ -14,7 +14,7 @@ int q1() {
 
 // #2
 int q2() {
-    const double rate = 0.001;   
+    const double RATE = 0.001;   
     double sweetKillMouse, mouse, dieter;
     cout << "Enter the amount of sweet that kills a mouse: ";
     cin >> sweetKillMouse;
@@ -26,21 +26,21 @@ int q2() {
     cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
     cout.precision(3);
-    cout << "You may drink " << sweetKillMouse * dieter / mouse / rate << " sodas." << endl;
+    cout << "You may drink " << sweetKillMouse * dieter / mouse / RATE << " sodas." << endl;
     return 0;
 }
 
 // #3
 int q3() {
-    const double salesInc = 1.13;
-    const double profitInc = 1.27;
+    const double SALEC_INC = 1.13;
+    const double PROFIT_INC = 1.27;
     double prevSales, prevProfit;
     cout << "Enter previous sales in millions: ";
     cin >> prevSales;
     cout << "Enter previous profit in millions: ";
     cin >> prevProfit;
-    cout << "Increased sales amount is " << prevSales * salesInc << " millions.\n";
-    cout << "Increased profit amount is " << prevProfit * profitInc << " millions.\n";
+    cout << "Increased sales amount is " << prevSales * SALEC_INC << " millions.\n";
+    cout << "Increased profit amount is " << prevProfit * PROFIT_INC << " millions.\n";
     return 0;
 }
 
@@ -197,12 +197,12 @@ int q12() {
 
 // #13
 int q13() {
-    const int lethalAmount = 10000;
+    const int LETHAL_AMOUNT = 10000;
     int caf;
     cout << "Enter the amount of caffeine in milligrams in a drink: ";
     cin >> caf;
-    int r = lethalAmount / caf;
-    if (lethalAmount % caf != 0) { 
+    int r = LETHAL_AMOUNT / caf;
+    if (LETHAL_AMOUNT % caf != 0) { 
         r += 1; 
     }
     cout << "Drinking " << r << " cups of it will kill you.\n";
