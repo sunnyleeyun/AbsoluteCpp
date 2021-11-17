@@ -68,3 +68,55 @@ int d3_4() {
     cout << "That's it forn your 24-hour weather program.\n";
     return 0;
 }
+
+double totalCost(int numberParameter, double priceParameter);
+int d3_5() {
+    double price, bill;
+    int number;
+
+    cout << "Enter the number of items purchased: ";
+    cin >> number;
+    cout << "Enter the price per item $";
+    cin >> price;
+
+    bill = totalCost(number, price);
+
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(2);
+    cout << number << " items at $" << price << " each.\n"
+         << "Final bill, including tax, is $" << bill << endl;
+    return 0;
+}
+
+double totalCost(int numberParameter, double priceParameter) {
+    const double TAXRATE = 0.05;
+    double subtotal;
+    subtotal = priceParameter * numberParameter;
+    return (subtotal + subtotal * TAXRATE);
+}
+
+
+void iceCreamDivision(int number, double totalWeight);
+int d3_7() {
+    int number;
+    double totalWeight;
+    cout << "Enter the number of customers: ";
+    cin >> number;
+    cout << "Enter the weight of ice cream: ";
+    cin >> totalWeight;
+    iceCreamDivision(number, totalWeight);
+
+    return 0;
+}
+
+void iceCreamDivision(int number, double totalWeight) {
+    double portion;
+    if (number == 0) {
+        cout << "Cannot divide among zero customers.\n";
+        return;
+    }
+    portion = totalWeight / number;
+    cout << "Each one receives " << portion << " ounces of ice cream.\n"; 
+}
+
