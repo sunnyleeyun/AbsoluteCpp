@@ -6,6 +6,7 @@
         "iosfwd": "cpp",
         "string": "cpp",
         "typeinfo": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "cmath": "cpp"
     }
 }
