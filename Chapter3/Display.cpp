@@ -3,6 +3,7 @@
 #include <cstdlib>
 using namespace std;
 
+// #3.1
 int d3_1() {
     const double COST_PER_SQ_FT = 10.50;
     double budget, area, lengthSide;
@@ -24,6 +25,7 @@ int d3_1() {
     return 0;
 }
 
+// #3.3
 int d3_3() {
 
     cout << "Hello out there!\n";
@@ -34,6 +36,7 @@ int d3_3() {
     return 0;
 }
 
+// #3.4
 int d3_4() {
     int month, day;
     cout << "Welcome to your friendly weather program.\n"
@@ -69,6 +72,7 @@ int d3_4() {
     return 0;
 }
 
+// #3.5
 double totalCost(int numberParameter, double priceParameter);
 int d3_5() {
     double price, bill;
@@ -97,6 +101,7 @@ double totalCost(int numberParameter, double priceParameter) {
 }
 
 
+// #3.7
 void iceCreamDivision(int number, double totalWeight);
 int d3_7() {
     int number;
@@ -119,4 +124,60 @@ void iceCreamDivision(int number, double totalWeight) {
     portion = totalWeight / number;
     cout << "Each one receives " << portion << " ounces of ice cream.\n"; 
 }
+
+// #3.8
+double estimateOfTotal(int minPeas, int maxPeas, int podCount);
+int d3_8() {
+    int maxCount, minCount, podCount;
+    double averagePea, yeild;
+    
+    cout << "Enter minimum and macimum number of peas in a pod: ";
+    cin >> minCount >> maxCount;
+    cout << "Enter the number of pods: ";
+    cin >> podCount;
+    cout << "Enter the weight of an average pea: ";
+    cin >> averagePea;
+
+    yeild = estimateOfTotal(minCount, maxCount, podCount) * averagePea;
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(3);
+    cout << "Estimated pea weight = " << averagePea << " ounces" << endl
+         << "Estimated average yield = " << yeild << " ounces" << endl;
+
+    return 0;
+}
+
+double estimateOfTotal(int minPeas, int maxPeas, int podCount) {
+    double averagePea;
+    averagePea = (maxPeas + minPeas) / 2.0;
+    return (podCount * averagePea);
+}
+
+// #3.9
+const double PI = 3.14159;
+double area(double radius);
+double volume(double radius);
+int d3_9() {
+    double radiusOfBoth, areaOfCicle, volumeOfSphere;
+    
+    cout << "Enter a radius to use for both a circle and a sphere: ";
+    cin >> radiusOfBoth;
+
+    areaOfCicle = area(radiusOfBoth);
+    volumeOfSphere = volume(radiusOfBoth);
+
+    cout << "Area of circle = " << areaOfCicle << " square inches\n"
+         << "Volume of sphere = " << volumeOfSphere << " cubic inches\n";
+    return 0;
+}
+
+double area(double radius) {
+    return PI * pow(radius, 2);
+}
+
+double volume(double radius) {
+    return (4.0 / 3.0) * PI * pow(radius, 3);
+}
+
 
