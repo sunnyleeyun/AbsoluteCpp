@@ -9,6 +9,10 @@
         "fstream": "cpp",
         "cmath": "cpp",
         "iterator": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "chrono": "cpp",
+        "istream": "cpp",
+        "locale": "cpp",
+        "streambuf": "cpp"
     }
 }

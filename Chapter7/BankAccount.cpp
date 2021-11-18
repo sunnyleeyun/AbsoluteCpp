@@ -13,11 +13,11 @@ public:
 
     void update();
     void input();
-    void output();
-    double getBalance();
-    int getDollars();
-    int getCents();
-    double getRate();
+    void output() const;
+    double getBalance() const;
+    int getDollars() const;
+    int getCents() const;
+    double getRate() const;
 
     void setBalance(double balance);
     void setBalance(int dollars, int cents);
@@ -27,11 +27,11 @@ private:
     int accountDollars;
     int accountCents;
     double rate;
-    int dollarsPart(double amount);
-    int centsPart(double amount);
-    int round(double number);
+    int dollarsPart(double amount) const;
+    int centsPart(double amount) const;
+    int round(double number) const;
 
-    double fraction(double percent);
+    double fraction(double percent) const;
 };
 
 int main()
@@ -96,7 +96,7 @@ void BankAccount::input()
     setRate(rate);
 }
 
-void BankAccount::output()
+void BankAccount::output() const
 {
     cout << "Account balance: ";
     int absDollars = abs(accountDollars);
@@ -133,12 +133,12 @@ void BankAccount::setRate(double newRate)
     }
 }
 
-int BankAccount::dollarsPart(double amount)
+int BankAccount::dollarsPart(double amount) const
 {
     return static_cast<int>(amount);
 }
 
-int BankAccount::centsPart(double amount)
+int BankAccount::centsPart(double amount) const
 {
     double doubleCents = amount * 100;
     int intCents = (round(fabs(doubleCents))) % 100;
@@ -147,12 +147,12 @@ int BankAccount::centsPart(double amount)
     return intCents;
 }
 
-int BankAccount::round(double number) 
+int BankAccount::round(double number) const
 {
     return static_cast<int>(floor(number + 0.5));
 }
 
-double BankAccount::fraction(double percent)
+double BankAccount::fraction(double percent) const
 {
     return (percent / 100.0);
 }
