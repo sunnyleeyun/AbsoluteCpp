@@ -59,3 +59,31 @@ int q8() {
     // If there's not enough space, it returns NULL or aborts the program. (depends on compiler)
     return 0;
 }
+
+// 9
+int q9() {
+    typedef char* CharArray;
+    return 0;
+}
+
+// 10
+int q10() {
+    int *entry;
+    entry = new int[10];
+    cout << "Enter 10 integers: \n";
+    for (int i = 0; i < 10; i++)
+        cin >> entry[i];
+    return 0;
+}
+
+// 11
+int q11() {
+    // delete [] entry
+    return 0;
+}
+
+// 12
+int q12() {
+    // 0 1 2 3 4 5 6 7 8 9 
+    return 0;
+}
