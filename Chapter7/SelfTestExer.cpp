@@ -68,13 +68,13 @@ int q8() {
 }
 
 // #9
-int q9()) {
+int q9() {
     // 0 1 2 3 4 5 6 7 8 9
     return 0;
 }
 
 // #10
-int q10()) {
+int q10() {
     // size is the number of the vector, capacity is the memory allocated number of the vector
     return 0;
 }
